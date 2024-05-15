@@ -223,6 +223,60 @@ class Categories extends StatelessWidget {
                     ),
                   ),
                 ),
+                GestureDetector(
+                  onTap: () {
+
+                  },
+                  child: Card(
+                    elevation: 3,
+                    margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                    color: Color(0xFF1A4D2E),
+                    child: Row(
+                      children: <Widget>[
+                        Padding(
+                          padding: EdgeInsets.all(15),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(8),
+                            child: Image.asset(
+                              'images/merah.jpg',
+                              width: 80,
+                              height: 80,
+                            ),
+                          ),
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              'Beras Merah',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w700,
+                                color: Colors.white
+                              ),
+                            ),
+                            Text(
+                              'Rp. 35.291/Kg', // Add your text here
+                              style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400,
+                                color: Colors.white
+                              ),
+                            ),
+                            SizedBox(
+                              height: 3,
+                            ),
+                            Row(
+                              children: List.generate(5, (index) =>
+                                Icon(Icons.star, color: Colors.yellow),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
           ],

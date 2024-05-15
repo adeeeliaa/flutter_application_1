@@ -51,8 +51,18 @@ class _CartState extends State<Cart> {
               SizedBox(height: 5),
               Column(
                 children: <Widget>[
-                  _buildCartItem(0, 'Beras Ciherang', 'Images/ciherang.jpg', 'Rp. 73.000/2Kg'),
-                  _buildCartItem(1, 'Beras Mentik Wangi', 'Images/mentikwangi.jpeg', 'Rp. 153.000/5Kg'),
+                  _buildCartItem(
+                    index: 0, 
+                    title: 'Beras Ciherang', 
+                    imagePath: 'Images/ciherang.jpg', 
+                    price: 'Rp. 73.000/2Kg'
+                  ),
+                  _buildCartItem(
+                    index: 1, 
+                    title: 'Beras Mentik Wangi', 
+                    imagePath: 'Images/mentikwangi.jpeg', 
+                    price: 'Rp. 153.000/5Kg'
+                  ),
                 ],
               ),
             ],
@@ -88,16 +98,21 @@ class _CartState extends State<Cart> {
               padding: EdgeInsets.all(8.0),
               child: SizedBox(
                 width: double.infinity,
+                height: 48,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0xFF1A4D2E),
                   ),
                   child: Text(
-                    'Checkout',
+                    'Tambahkan ke Keranjang',
                     style: TextStyle(color: Color(0xFFF5EFE6)),
                   ),
                   onPressed: () {
-                    // Add your onPressed code here!
+                    final snackBar = SnackBar(
+                      content: Text('Produk ditambahkan ke keranjang'),
+                      duration: Duration(seconds: 2),
+                    );
+                    ScaffoldMessenger.of(context).showSnackBar(snackBar);
                   },
                 ),
               ),
@@ -108,7 +123,12 @@ class _CartState extends State<Cart> {
     );
   }
 
-  Widget _buildCartItem(int index, String title, String imagePath, String price) {
+  Widget _buildCartItem({
+    required int index, 
+    required String title, 
+    required String imagePath, 
+    required String price
+  }) {
     return Row(
       children: <Widget>[
         Padding(
