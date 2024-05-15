@@ -47,7 +47,7 @@ class ProductDesc extends StatelessWidget {
               child: Text(
                 'Beras Ciherang',
                 style: TextStyle(
-                  fontSize: 25,
+                  fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -65,7 +65,7 @@ class ProductDesc extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(left: 15),
               child: Row(
-                children: List.generate(5, (index) => Icon(Icons.star, color: Colors.yellow)),
+                children: List.generate(5, (index) => Icon(Icons.star, color: Colors.yellow,size: 20,)),
               ),
             ),
             SizedBox(height: 15),
@@ -74,7 +74,7 @@ class ProductDesc extends StatelessWidget {
               child: Text(
                 'Deskripsi Produk',
                 style: TextStyle(
-                  fontSize: 17,
+                  fontSize: 16,
                   fontWeight: FontWeight.w500,
                 ),
               ),

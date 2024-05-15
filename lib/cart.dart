@@ -37,7 +37,7 @@ class _CartState extends State<Cart> {
                     child: Text(
                       'Keranjang Anda',
                       style: TextStyle(
-                        fontSize: 23,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -78,7 +78,7 @@ class _CartState extends State<Cart> {
                   Text(
                     'Total',
                     style: TextStyle(
-                      fontSize: 25,
+                      fontSize: 18,
                       fontWeight: FontWeight.w500,
                     ),
                   ),
@@ -87,7 +87,7 @@ class _CartState extends State<Cart> {
                   Text(
                     'Rp. 226.000', // Placeholder for the total amount
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 18,
                       fontWeight: FontWeight.w500,
                     ),
                   ),
@@ -108,11 +108,7 @@ class _CartState extends State<Cart> {
                     style: TextStyle(color: Color(0xFFF5EFE6)),
                   ),
                   onPressed: () {
-                    final snackBar = SnackBar(
-                      content: Text('Produk ditambahkan ke keranjang'),
-                      duration: Duration(seconds: 2),
-                    );
-                    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    
                   },
                 ),
               ),
@@ -148,7 +144,7 @@ class _CartState extends State<Cart> {
             Text(
               title,
               style: TextStyle(
-                fontSize: 18,
+                fontSize: 16,
                 fontWeight: FontWeight.w700,
               ),
             ),

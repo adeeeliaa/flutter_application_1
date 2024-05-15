@@ -47,7 +47,7 @@ class Categories extends StatelessWidget {
                 Text(
                   'Beras',
                   style: TextStyle(
-                    fontSize: 23,
+                    fontSize: 18,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -88,7 +88,7 @@ class Categories extends StatelessWidget {
                             Text(
                               'Beras Ciherang',
                               style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w700,
                                 color: Colors.white
                               ),
@@ -106,7 +106,7 @@ class Categories extends StatelessWidget {
                             ),
                             Row(
                               children: List.generate(5, (index) =>
-                                Icon(Icons.star, color: Colors.yellow),
+                                Icon(Icons.star, color: Colors.yellow, size: 20,),
                               ),
                             ),
                           ],
@@ -142,7 +142,7 @@ class Categories extends StatelessWidget {
                             Text(
                               'Beras Mentik Wangi',
                               style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w700,
                                 color: Colors.white
                               ),
@@ -160,7 +160,7 @@ class Categories extends StatelessWidget {
                             ),
                             Row(
                               children: List.generate(5, (index) =>
-                                Icon(Icons.star, color: Colors.yellow),
+                                Icon(Icons.star, color: Colors.yellow,size: 20,),
                               ),
                             ),
                           ],
@@ -196,7 +196,7 @@ class Categories extends StatelessWidget {
                             Text(
                               'Beras IR 64',
                               style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w700,
                                 color: Colors.white
                               ),
@@ -214,7 +214,7 @@ class Categories extends StatelessWidget {
                             ),
                             Row(
                               children: List.generate(5, (index) =>
-                                Icon(Icons.star, color: Colors.yellow),
+                                Icon(Icons.star, color: Colors.yellow,size: 20,),
                               ),
                             ),
                           ],
@@ -250,7 +250,7 @@ class Categories extends StatelessWidget {
                             Text(
                               'Beras Merah',
                               style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w700,
                                 color: Colors.white
                               ),
@@ -268,7 +268,7 @@ class Categories extends StatelessWidget {
                             ),
                             Row(
                               children: List.generate(5, (index) =>
-                                Icon(Icons.star, color: Colors.yellow),
+                                Icon(Icons.star, color: Colors.yellow, size: 20,),
                               ),
                             ),
                           ],
